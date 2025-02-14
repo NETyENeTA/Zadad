@@ -73,6 +73,7 @@ function getNormalTime(milliseconds) {
 
 function getNormalZeros(value) {
   if (value === 0) return "";
+  if (value < 0) return "00";
   if (value < 10) return `0${value}`;
   return value;
 }
@@ -83,7 +84,6 @@ function timer() {
   clock.hours.value = getNormalZeros(currentTime.hours);
   clock.minutes.value = getNormalZeros(currentTime.minutes);
   clock.seconds.value = getNormalZeros(currentTime.seconds);
-  console.log(rawTime);
   if (rawTime <= 1000) stopTimer();
 }
 

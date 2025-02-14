@@ -34,7 +34,6 @@ startBtn.onclick = (e) => {
     idWaiter = setInterval(waiter, 1000);
     startBtn.disabled = true;
   }
-  console.log(MSG);
 
   let text = MSG.pop();
 
