@@ -1,0 +1,49 @@
+body {
+  background-color: lightyellow;
+}
+
+section {
+  background: url("./assets/images/bg.jpg") no-repeat;
+  box-shadow: 30px 30px 10px red, -20px -10px 50px rgb(207, 207, 95);
+
+  margin: 50px auto;
+
+  width:1000px;
+  height: 666px;
+}
+
+ul {
+  list-style: none;
+  min-width: 35%;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  background-color: wheat;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  li {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  a {
+    font-size: 10px;
+  }
+}
