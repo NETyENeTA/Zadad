@@ -57,6 +57,10 @@ function startTimer() {
   startBtn.disabled = true;
   stopBtn.disabled = false;
 
+  clock.hours.disabled = true;
+  clock.minutes.disabled = true;
+  clock.seconds.disabled = true;
+
   idTimer = setInterval(timer, 1000);
 }
 
@@ -92,6 +96,11 @@ function timer() {
 function stopTimer() {
   startBtn.disabled = false;
   stopBtn.disabled = true;
+
+  clock.hours.disabled = false;
+  clock.minutes.disabled = false;
+  clock.seconds.disabled = false;
+
   clearInterval(idTimer);
 }
 

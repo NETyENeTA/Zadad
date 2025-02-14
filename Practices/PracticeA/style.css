@@ -30,9 +30,20 @@ input[type="text"] {
   border-radius: 8px;
   background-color: slategray;
 
-    &::placeholder {
-        color: black;
-    }
+  transition: all 0.4s ease-in-out;
+
+  &::placeholder {
+    color: black;
+  }
+
+  &:disabled {
+    background-color: black;
+    color: white
+  }
+
+  &:disabled::placeholder {
+    color: white
+  }
 
 }
 
